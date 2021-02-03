@@ -1,3 +1,6 @@
+/*
+*prints a specific line using puts
+*/
 #include <stdio.h> 
 int main(void)
 {
