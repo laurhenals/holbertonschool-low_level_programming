@@ -1,6 +1,8 @@
 #include <stdio.h> 
-/*
-*prints a specific line using puts
+/**
+* main - Entry ponit
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
