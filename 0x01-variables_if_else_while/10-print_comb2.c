@@ -14,7 +14,10 @@ for (d = 0; d < 10; d++)
 {
 putchar((c % 10) + '0');
 putchar((d % 10) + '0');
+
 if(c == 9 && d == 9)
+continue;
+
 putchar(',');
 putchar(' ');
 }
