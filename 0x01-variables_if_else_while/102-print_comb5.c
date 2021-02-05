@@ -2,43 +2,23 @@
 
 int main(void)
 {
-int x = '0';
+int a, b;
 
-while  (x <= '9')
+for  (a = 0; a <= 98; a++)
 {
-int y = '0';
-
-while  (y <= '9')
+for  (b = a + 1; b <= 99; b++)
 {
-int z = '0';
-
-while (z <= '9')
-{
-int a = '0';
-
-while (a <= '9')
-{
-if (x <= z && y < a)
-{
-putchar(x);
-putchar(y);
+putchar((a / 10) + '0');
+putchar((a % 10) + '0');
 putchar(' ');
-putchar(z);
-putchar(a);
+putchar((b / 10) + '0');
+putchar((b % 10) + '0');
 
-
-if (x == '9' && y == '8' && z == '9' && a == '9')
-break;
+if (a == 98 && b == 99)
+continue;
 putchar(',');
 putchar(' ');
 }
-a += 1;
-}
-z += 1;
-}
-y += 1;
-}
-x += 1;
 }
 putchar('\n');
 return (0);
