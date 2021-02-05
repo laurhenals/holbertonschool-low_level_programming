@@ -17,8 +17,8 @@ for (a = 0 ; a < 9 ; a++)
 		putchar (b);
 		if (a != 8 || b != 9)
 		{
-			putchar (',');
-			putchar (' ');
+			putchar (44);
+			putchar (32);
 		}
 	}
 }
